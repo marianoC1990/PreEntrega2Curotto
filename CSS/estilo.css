@@ -10,12 +10,13 @@ p{
     font-family: 'Poppins', sans-serif;
     font-weight: 200;
 }
-h1{
+h1{display: flex;flex-direction: row;justify-content: center;
     font-family: 'Alegreya Sans', sans-serif;
    font-weight: bold;
    text-align: center;
    
 }
+h2{display: flex;flex-direction: row;justify-content: center;}
 .imgFluid{
     width: 100%;
   
@@ -55,6 +56,11 @@ h1{
         
         padding: 20px;   
     }
+    /** GRID PAGINA PROYECTOS**/
+    
+    
+
+
     .gridMainIndex {
         display: grid;
         grid-template-areas: 
