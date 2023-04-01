@@ -5,7 +5,7 @@
 
 /* general*/
 
-
+main{margin-right: 15px;}
 
 p{
     font-family: 'Poppins', sans-serif;
@@ -80,12 +80,13 @@ h1{
         "mainProyectos"
         "footerProyectos";
         
+        
     }
 
     .headerProyectos{grid-area: headerProyectos;}
     .mainProyectos {grid-area: mainProyectos;}
     .footerProyectos{grid-area: footerProyectos;}
-      
+      /*grid bosque */
     .gridBosque{
         display: grid;
         grid-template-columns: 50% 50%;
@@ -93,15 +94,43 @@ h1{
        grid-template-areas: 
        "titBosque titBosque"
        "imgBosque txtBosque";
-       grid-gap: 20px;
-     
-       
+       grid-gap: 20px;   
+       padding: 10px;  
     }
     .titBosque{grid-area: titBosque;}
     .imgBosque{grid-area: imgBosque;}
     .txtBosque{grid-area: txtBosque;}
     .txtBosque{font-size: 20px; display: flex; align-items: center;}
-
+/*grid lago*/
+.gridLago{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto;
+   grid-template-areas: 
+   "titLago titLago"
+   "txtLago imgLago";
+   grid-gap: 20px;  
+   padding: 10px;   
+}
+.titLago{grid-area: titLago;}
+.imgLago{grid-area: imgLago;}
+.txtLago{grid-area: txtLago;}
+.txtLago{font-size: 20px; display: flex; align-items: center;}
+/*grid montaña*/
+.gridMont{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto;
+   grid-template-areas: 
+   "titMont titMont"
+   "imgMont txtMont";
+   grid-gap: 20px;  
+   padding: 10px;   
+}
+.titMont{grid-area: titMont;}
+.imgMont{grid-area: imgMont;}
+.txtMont{grid-area: txtMont;}
+.txtMont{font-size: 20px; display: flex; align-items: center;}
      footer{
         background-color: lightslategray;
         border-radius: 5px;
