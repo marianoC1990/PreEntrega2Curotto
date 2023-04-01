@@ -55,6 +55,7 @@ h1{
         
         padding: 20px;   
     }
+    /**Grid index**/
     .gridMainIndex {
         display: grid;
         grid-template-areas: 
@@ -66,7 +67,21 @@ h1{
      .titulo{grid-area: titulo;}
      .video{grid-area: viedo;}
      .textoIndex{grid-area: texto;}
-    footer{
+    /*Grid proyectos**/
+    .gridProyectos{display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: 
+        "headerProyectos"
+        "mainProyectos"
+        "footerProyectos";
+        
+    }
+    .headerProyectos{grid-area: headerProyectos;}
+    .mainProyectos {grid-area: mainProyectos;}
+    .footerProyectos{grid-area: footerProyectos;}
+
+     footer{
         background-color: lightslategray;
         border-radius: 5px;
        
