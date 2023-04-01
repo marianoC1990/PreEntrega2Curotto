@@ -6,6 +6,7 @@
 /* general*/
 
 
+
 p{
     font-family: 'Poppins', sans-serif;
     font-weight: 200;
@@ -24,6 +25,9 @@ h2{display: flex;flex-direction: row;justify-content: center;}
 }
 /*Desktop*/
 @media (min-width:1024px){
+    .p20{
+        padding: 20px;
+    }
     li{
         list-style: none;
         padding: 5px;
@@ -56,11 +60,16 @@ h2{display: flex;flex-direction: row;justify-content: center;}
         
         padding: 20px;   
     }
+<<<<<<< HEAD
     /** GRID PAGINA PROYECTOS**/
     
     
 
 
+=======
+    /**Grid index**/
+    
+>>>>>>> agregandoGrids
     .gridMainIndex {
         display: grid;
         grid-template-areas: 
@@ -72,7 +81,38 @@ h2{display: flex;flex-direction: row;justify-content: center;}
      .titulo{grid-area: titulo;}
      .video{grid-area: viedo;}
      .textoIndex{grid-area: texto;}
-    footer{
+    /*Grid proyectos**/
+    .gridProyectos{display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: 
+        "headerProyectos"
+        "mainProyectos"
+        "footerProyectos";
+        
+    }
+
+    .headerProyectos{grid-area: headerProyectos;}
+    .mainProyectos {grid-area: mainProyectos;}
+    .footerProyectos{grid-area: footerProyectos;}
+      
+    .gridBosque{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto auto;
+       grid-template-areas: 
+       "titBosque titBosque"
+       "imgBosque txtBosque";
+       grid-gap: 20px;
+     
+       
+    }
+    .titBosque{grid-area: titBosque;}
+    .imgBosque{grid-area: imgBosque;}
+    .txtBosque{grid-area: txtBosque;}
+    .txtBosque{font-size: 20px; display: flex; align-items: center;}
+
+     footer{
         background-color: lightslategray;
         border-radius: 5px;
        
