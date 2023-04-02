@@ -4,6 +4,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;700&family=Poppins:ital,wght@0,200;0,600;1,200&display=swap');
 
 /* general*/
+/*sticky nav*/
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+  }
+/*probando hover*/
+.hover:hover {
+    background-color: darkgray;
+    border:solid black 2px ;
+   
+
+}
 
 
 
@@ -11,14 +25,7 @@ p{
     font-family: 'Poppins', sans-serif;
     font-weight: 200;
 }
-h1{
-    font-family: 'Alegreya Sans', sans-serif;
-   font-weight: bold;
-   text-align: center;
-   background-color: white;
-   width: 500px;
-   
-}
+
 .imgFluid{
     width: 100%;
   
@@ -26,6 +33,14 @@ h1{
 }
 /*Desktop*/
 @media (min-width:1024px){
+    h1{
+        font-family: 'Alegreya Sans', sans-serif;
+       font-weight: bold;
+       text-align: center;
+       background-color: white;
+       width: 500px;
+       
+    }
     .p20{
         padding: 20px;
     }
@@ -49,7 +64,7 @@ h1{
         border-radius: 5px;
         padding: 20px;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
         font-family: Arial, Helvetica, sans-serif;
         
     }
