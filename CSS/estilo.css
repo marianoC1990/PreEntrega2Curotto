@@ -5,12 +5,7 @@
 
 /* general*/
 /*sticky nav*/
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
 
-  }
 /*probando hover*/
 .hover:hover {
     background-color: darkgray;
@@ -33,6 +28,10 @@ p{
 }
 /*Desktop*/
 @media (min-width:1024px){
+    .hover:hover {
+        background-color: darkgray;
+        border:solid black 2px ;
+    }
     h1{
         font-family: 'Alegreya Sans', sans-serif;
        font-weight: bold;
