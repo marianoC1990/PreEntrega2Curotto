@@ -4,6 +4,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;700&family=Poppins:ital,wght@0,200;0,600;1,200&display=swap');
 
 /* general*/
+/*sticky nav*/
+
+/*probando hover*/
+.hover:hover {
+    background-color: darkgray;
+    border:solid black 2px ;
+   
+
+}
 
 
 
@@ -11,13 +20,12 @@ p{
     font-family: 'Poppins', sans-serif;
     font-weight: 200;
 }
-h1{display: flex;flex-direction: row;justify-content: center;
+h1{
     font-family: 'Alegreya Sans', sans-serif;
    font-weight: bold;
    text-align: center;
    
 }
-h2{display: flex;flex-direction: row;justify-content: center;}
 .imgFluid{
     width: 100%;
   
@@ -25,6 +33,18 @@ h2{display: flex;flex-direction: row;justify-content: center;}
 }
 /*Desktop*/
 @media (min-width:1024px){
+    .hover:hover {
+        background-color: darkgray;
+        border:solid black 2px ;
+    }
+    h1{
+        font-family: 'Alegreya Sans', sans-serif;
+       font-weight: bold;
+       text-align: center;
+       background-color: white;
+       width: 500px;
+       
+    }
     .p20{
         padding: 20px;
     }
@@ -48,7 +68,7 @@ h2{display: flex;flex-direction: row;justify-content: center;}
         border-radius: 5px;
         padding: 20px;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
         font-family: Arial, Helvetica, sans-serif;
         
     }
@@ -89,12 +109,13 @@ h2{display: flex;flex-direction: row;justify-content: center;}
         "mainProyectos"
         "footerProyectos";
         
+        
     }
 
     .headerProyectos{grid-area: headerProyectos;}
     .mainProyectos {grid-area: mainProyectos;}
     .footerProyectos{grid-area: footerProyectos;}
-      
+      /*grid bosque */
     .gridBosque{
         display: grid;
         grid-template-columns: 50% 50%;
@@ -102,15 +123,43 @@ h2{display: flex;flex-direction: row;justify-content: center;}
        grid-template-areas: 
        "titBosque titBosque"
        "imgBosque txtBosque";
-       grid-gap: 20px;
-     
-       
+       grid-gap: 20px;   
+       padding: 10px;  
     }
     .titBosque{grid-area: titBosque;}
     .imgBosque{grid-area: imgBosque;}
     .txtBosque{grid-area: txtBosque;}
     .txtBosque{font-size: 20px; display: flex; align-items: center;}
-
+/*grid lago*/
+.gridLago{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto;
+   grid-template-areas: 
+   "titLago titLago"
+   "txtLago imgLago";
+   grid-gap: 20px;  
+   padding: 10px;   
+}
+.titLago{grid-area: titLago;}
+.imgLago{grid-area: imgLago;}
+.txtLago{grid-area: txtLago;}
+.txtLago{font-size: 20px; display: flex; align-items: center;}
+/*grid montaña*/
+.gridMont{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto;
+   grid-template-areas: 
+   "titMont titMont"
+   "imgMont txtMont";
+   grid-gap: 20px;  
+   padding: 10px;   
+}
+.titMont{grid-area: titMont;}
+.imgMont{grid-area: imgMont;}
+.txtMont{grid-area: txtMont;}
+.txtMont{font-size: 20px; display: flex; align-items: center;}
      footer{
         background-color: lightslategray;
         border-radius: 5px;
@@ -121,10 +170,16 @@ h2{display: flex;flex-direction: row;justify-content: center;}
         justify-content: space-evenly;
         font-family: 'Poppins', sans-serif;
         font-weight: 600;
-    
-        
-    
-    }
+      }
+      /*grid Nosotros*/
+      .gridNosotros{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto auto auto;
+       grid-gap: 20px;
+       padding: 20px;
+       font-size: 20px;
+      }
     
     h2{font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;}
     .textoBlog {
